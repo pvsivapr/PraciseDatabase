@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<title color="red">welcome</title>
+        <link rel="icon" type="image/jpg" href="..\ProjFiles\Images\TitleBarIcon.jpg" sizes="16x16">
+        <!--<link rel="stylesheet" href="ProjFiles\CssFiles\custom_screens.css" type="text/css" media="screen" />-->
+        <link rel="stylesheet" href="MyCustomStyles.css" type="text/css" media="screen" />
+        <script src="practiseMySQLService.js" type="text/javascript"></script>
+        <!-- <script type="text/javascript" src="..\JavaScript\practiseMySQLService.js"></script>           -->
+	</head>
+	<body bgcolor="lightgreen">
+		<center>
+            <div class="pagebody" >
+                <div class="pgheader">
+                    <center>
+                        <p>this is my first header in first html page with css
+                        </p>
+                    </center>
+                </div>
+                <div class="pgbody">
+                    <div class="pgbodyright">
+                            <center>
+                                    <div>
+                                    <fieldset>
+                                        <legend>Logging In</legend>
+                                    <table>
+                                        <!-- <form method="post" action="..\PhpFiles\loginvalidate.php" enctype="multipart/form-data" name="DataBaseQueryForm"> -->
+                                         <form method="post" name="DataBaseQueryForm" action=""  enctype="multipart/form-data" onsubmit="AccessQuery(); return false;"> <!--< return false;">-->
+                                            <tr>
+                                                <td>
+                                                    EnterQuery
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="query" required />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="submit" name="login"/>
+                                                </td>
+                                            </tr>
+                                        </form>
+                                    </table>
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <p id="resultText">
+                                        </p>
+                                    </div>
+                                 </center>
+                        <!-- <iframe class="frames" src="ProjFiles/HtmlFiles/body.html" name="pagebody" height="100%" width="100%">
+                        </iframe> -->
+                    </div>
+                </div>
+                <div class="pgfooter">
+                    <p>this is my first header in first html page with css
+                    </p>
+                </div>
+            </div>
+		</center>
+	</body>
+</html>
+<!-- INSERT INTO `userdetails`(`serial_no`, `user_id`, `user_aadharcard_no`, `user_first_name`, `user_last_name`, `user_mobile`, `user_email_id`) VALUES (1,1,98745632112,'Venkata Sivaprasad Reddy','Pulagam',9494953236,'pvsivap@gmail.com') -->
